@@ -97,3 +97,18 @@ button.hamburger {
 }
 
 /* Información */
+#informacion {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    padding: 2rem;
+}
+
+#informacion > .container {
+    text-align: center;
+}
+
+#informacion > .container > * {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
