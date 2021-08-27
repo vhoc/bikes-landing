@@ -1,5 +1,88 @@
 @media only screen and ( min-width: 769px ) {
     
- 
+    .btn {
+        border: 1px solid white;
+        border-radius: 0.6rem;
+        padding: 0.62rem 1rem 0.62rem 1rem;
+        font-size: 1.3rem;
+    }
+
+    /* Nav */
+    nav {      
+        padding-left: 1rem;
+    }
+
+    button.hamburger {
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex;
+        align-items: stretch;
+    }
+
+    .nav-menu > .nav-item {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .nav-menu > .nav-item > a {        
+        font-size: 0.9em;
+        color: white;
+    }
+
+    .nav-menu > .nav-item > a:hover {
+        color: var( --bikesblue );
+    }
+
+    .nav-menu > .menu-divider {
+        border: 1px solid white;
+    }
+
+    nav > .nav-social {
+        display: flex;        
+    }
+
+    nav > .nav-social > a > img {
+        width: 24px;
+        margin-left: 1rem;
+    }
+
+    /* Hero */
+    #hero {
+        background: url( '../img/hero-1200.webp' );
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        justify-content: flex-start;
+        text-align: left;
+        align-items: center;
+    }
+
+    #hero > .container {
+        align-items: flex-start;
+        text-align: left;
+        width: 62%;
+    }
+
+    #hero > .container > img {
+        margin-left: 3rem;
+    }
+
+    #hero > .container > .hero-content {
+        max-width: 768px;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 1.2em;
+    }
+
+    
  
  }

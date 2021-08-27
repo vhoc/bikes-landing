@@ -37,20 +37,51 @@
 
         /* Variables here */
         :root {
-            
+            --dark: #201e1f;
+            --gray: #b6b7b8;
+            --bikesblue: #19a8e0;
         }
 
+        /* bebas-neue-regular - latin */
         @font-face {
-            font-family: '';
-            src: url('') format('woff2'),
-                url('') format('woff');
-            font-weight: normal;
-            font-style: normal;
-            font-display: swap;
+        font-family: 'Bebas Neue';
+        font-style: normal;
+        font-weight: 400;
+        src: local(''),
+            url('assets/fonts/bebas-neue-v2-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url('assets/fonts/bebas-neue-v2-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        }
+
+        /* montserrat-300 - latin */
+        @font-face {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 300;
+        src: local(''),
+            url('assets/fonts/montserrat-v18-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url('assets/fonts/montserrat-v18-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        }
+        /* montserrat-regular - latin */
+        @font-face {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        src: local(''),
+            url('assets/fonts/montserrat-v18-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url('assets/fonts/montserrat-v18-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        }
+        /* montserrat-600italic - latin */
+        @font-face {
+        font-family: 'Montserrat';
+        font-style: italic;
+        font-weight: 600;
+        src: local(''),
+            url('assets/fonts/montserrat-v18-latin-600italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url('assets/fonts/montserrat-v18-latin-600italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
         }
 
         body {
-            font-family: '';
+            font-family: 'Montserrat';
         }
 
         li { list-style: none }
@@ -62,6 +93,18 @@
             border-color: red;
             border-width: 1px;
         }
+
+        .btn {
+            border: 1px solid white;
+            border-radius: 0.6rem;
+            padding: 0.62rem 1rem 0.62rem 1rem;
+        }
+
+        .btn.btn-clear {
+            background: transparent;            
+            color: white;
+        }
+
     </style>
 
     <link rel="stylesheet" media="screen and (min-width:0px)" href="assets/css/mobile.css"/>
@@ -71,7 +114,8 @@
     <link rel="stylesheet" media="screen and (min-width:1201px)" href="assets/css/desktop-xxl.css"/>
 
     <!-- Preloads -->
-    <link rel="preload" as="image" href="assets/img/"/>
+    <link rel="preload" as="image" href="assets/img/hero-0768.webp"/>
+    <link rel="preload" as="image" href="assets/img/hero-1200.webp"/>
 
 </head>
 
@@ -85,15 +129,80 @@
 
         <nav>
 
+            <a href="#" class="logotipo "><span>BIKES N' BIKES</span></a>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#informacion" class="nav-link">Información</a>
+                </li>
+                <span class="menu-divider"></span>
+                <li class="nav-item">
+                    <a href="#precios" class="nav-link">Precios</a>
+                </li>
+                <span class="menu-divider"></span>
+                <li class="nav-item">
+                    <a href="#menudigital" class="nav-link">Menú Digital</a>
+                </li>
+                <span class="menu-divider"></span>
+                <li class="nav-item">
+                    <a href="#contacto" class="nav-link">Contacto</a>
+                </li>
+            </ul>
+
+            <div class="nav-social">
+                <a href=""/><img src="assets/icons/facebook-brands.svg" loading="lazy" alt="Facebook" /></a>
+                <a href=""/><img src="assets/icons/whatsapp-brands.svg" loading="lazy" alt="WhatsApp" /></a>
+                <a href=""/><img src="assets/icons/instagram-brands.svg" loading="lazy" alt="Instagram" /></a>
+            </div>
+
+            <button class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
         </nav>
 
         <!---------------------------------->
-        <!--            Header            -->
+        <!--         Section Hero         -->
         <!---------------------------------->
 
-        <header>
+        <section id="hero">
 
-        </header>
+            <div class="container">
+
+                <img src="assets/img/isologo-0200.webp" aria-hidden="true" loading="lazy"/>
+
+                <div class="hero-content">
+
+                    <h1>¿Quieres pasar un día diferente en San Carlos?</h1>
+
+                    <p>
+                        En Bikes N' Bikes tenemos lo que necesitas para que tu estancia sea especial, 
+                        para ti y toda tu familia...
+                    </p>
+
+                    <a href="#contacto" class="btn btn-clear">conoce más</a>
+
+                </div>
+
+            </div>
+            
+        </section>
+
+        <!---------------------------------->
+        <!--            Section           -->
+        <!---------------------------------->
+
+        <section id="informacion">
+
+            <div class="container">
+
+
+
+            </div>
+
+        </section>
 
         <!---------------------------------->
         <!--            Section           -->
