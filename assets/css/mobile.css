@@ -100,7 +100,7 @@ button.hamburger {
 #informacion {
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     padding: 2rem;
 }
 
@@ -113,32 +113,149 @@ button.hamburger {
     margin-bottom: 1.5rem;
 }
 
-#informacion > .container > .informacion-imagen {
-    margin: .5em;
-    display: inline-grid;
-}
+
 
 img#img-info {
-    margin: .5em;
-    grid-column: 1;
-    grid-row: 1;
-    width: 300px;
+    --b:5px; /* adjust this */
+  border:10px solid #0000; /* this */
+  background:
+    conic-gradient(from 0deg   at var(--b) calc(100% - var(--b)),#0000 90deg,#000 0) bottom left,
+    conic-gradient(from 180deg at calc(100% - var(--b)) var(--b),#0000 90deg,#000 0) top right;
+  background-size:60px 50px; /* and this */
+  background-origin:border-box;
+  background-repeat:no-repeat;
+  width: 100%;
+  max-width: 550px;
 }
 
-div.informacion-imagen::before, div.informacion-imagen::after {
-    content: "";
-    border-width: 2px;
-    border-style: solid;
-    border-color: black transparent transparent black;
-    width: 2em;
-    height: 2em;
-    grid-column: 1;
-    grid-row: 1;
-
+/* Venta y Renta */
+#venta-renta {    
+    display: flex;
+    justify-content: center;
 }
 
-div.informacion-imagen::before {
-    justify-self: flex-end;
-    align-self: flex-end;
-    border-color: transparent black black transparent;
+#venta-renta > .container {
+    width: 100%;
+    height: 700px;
+    background-image: url( "../img/slider-background.webp" );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+#venta-renta > .container h1 {
+    font-size: 2em;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+#venta-renta > .container h2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-decoration: underline;
+    font-size: 1.5em;    
+    font-weight: 400;
+}
+
+/*jssor slider loading skin spin css*/
+div.jssorl-009-spin {
+    position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);
+}
+
+.jssorl-009-spin img {
+    animation-name: jssorl-009-spin;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin-top:-19px;
+    position:relative;
+    top:50%;
+    width:38px;
+    height:38px;
+}
+
+#slider-container {
+    cursor:default;
+    position:relative;
+    top:0px;
+    left:0px;
+    width:980px;
+    height:300px;
+    overflow:hidden;
+}
+
+#slider-container > div img {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+@keyframes jssorl-009-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/*jssor slider bullet skin 051 css*/
+.jssorb051 .i {
+    position:absolute;cursor:pointer;
+    width:12px;height:12px;
+
+}
+.jssorb051 .i .b {fill:#fff;fill-opacity:0.3;}
+.jssorb051 .i:hover .b {fill-opacity:.7;}
+.jssorb051 .iav .b {fill-opacity: 1;}
+.jssorb051 .i.idn {opacity:.3;}
+
+/*jssor slider arrow skin 051 css*/
+.jssora051 {display:block;position:absolute;cursor:pointer;}
+.jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+.jssora051:hover {opacity:.8;}
+.jssora051.jssora051dn {opacity:.5;}
+.jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+
+#jssor_1 {
+    position:relative;
+    margin:0 auto;
+    top:0px;
+    left:0px;
+    width:980px;
+    height:300px;
+    overflow:hidden;
+    visibility:hidden;
+}
+
+#jssor_1 a {
+    display:none;position:absolute;
+}
+
+div.jssorb051 {
+    position:absolute;
+    bottom:16px;
+    right:16px;
+}
+
+#arrowleft {
+    width:65px;height:65px;top:0px;left:35px;
+}
+
+#arrowright {
+    width:65px;height:65px;top:0px;right:35px;
+}
+
+#costos {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#costos div {
+    display: flex;
+    flex-direction: column;
+}
+
+#costos div > h3,span {
+    padding: 1rem;
 }
