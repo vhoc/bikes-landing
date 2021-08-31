@@ -68,6 +68,7 @@
         background-repeat: no-repeat;
         background-position-x: right;
         background-size: cover;
+        background-attachment: fixed;
         height: 100vh;
         display: flex;
         justify-content: flex-start;
