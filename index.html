@@ -83,6 +83,7 @@
 
         body {
             font-family: 'Montserrat';
+            min-width: 320px;
         }
 
         li { list-style: none }
@@ -198,32 +199,38 @@
         </section>
 
         <!---------------------------------->
-        <!--            Section           -->
+        <!--     Section Informacion      -->
         <!---------------------------------->
 
         <section id="informacion">
 
             <div class="container">
 
-                <h1>ACERCA DE NOSOTROS...</h1>
+                <h1 class="titulo-movil">ACERCA DE NOSOTROS...</h1>
 
                 <div class="informacion-imagen">
                     
                     <img id="img-info" aria-hidden="true" src="assets/img/imagen-informacion.webp" loading="lazy"/>
 
                 </div>
+                
+                <div class="informacion-texto">
 
-                <p>
-                    <strong>Bikes N' Bikes</strong> nace de nuestro amor por las 
-                    bicicletas y ponemos esa pasión al servicio de la gente, para 
-                    ofrecer una alternativa divertida y diferente que puedes 
-                    disfrutar con toda tu familia.
-                </p>
+                    <h1 aria-hidden="true" class="titulo-desktop">ACERCA DE NOSOTROS...</h1>
 
-                <p>
-                    Tenemos para ti bicicletas de playa, de montaña y para 
-                    niños, las cuales puedes rentar por hora o por el día completo.
-                </p>
+                    <p>
+                        <strong>Bikes N' Bikes</strong> nace de nuestro amor por las 
+                        bicicletas y ponemos esa pasión al servicio de la gente, para 
+                        ofrecer una alternativa divertida y diferente que puedes 
+                        disfrutar con toda tu familia.
+                    </p>
+    
+                    <p>
+                        Tenemos para ti bicicletas de playa, de montaña y para 
+                        niños, las cuales puedes rentar por hora o por el día completo.
+                    </p>
+
+                </div>
 
             </div>
 
@@ -239,10 +246,10 @@
 
                 <h1>VENTA Y RENTA</h1>
 
-                <div id="jssor_1">n
+                <div id="jssor_1">
                     <!-- Loading Screen -->
                     <div data-u="loading" class="jssorl-009-spin">
-                        <img src="img/spin.svg" />
+                        <img src="assets/img/spin.svg" />
                     </div>
                     <div id="slider-container" data-u="slides">
                         <div>
@@ -295,6 +302,47 @@
                         <h3>Renta por día*</h3>
                         <a href="#" class="btn btn-clear">$600</a>
                         <span>*aplican restricciones</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!---------------------------------->
+        <!--           Visítanos          -->
+        <!---------------------------------->
+
+        <section id="visitanos">
+
+            <div class="container">
+
+                <h1>VISÍTANOS...</h1>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3524.160905570948!2d-111.04183578451438!3d27.95835802102195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86c963f92f57b98b%3A0x1db300de79d7e054!2sTaco%20Bravo%20Street%20Food!5e0!3m2!1ses-419!2smx!4v1630362141942!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                <h1>Blvd. Manlio Fabio Beltrones</h1>
+                <p>
+                    frente Gasolinera Arco, 
+                    <span>San Carlos, Sonora</span>
+                </p>
+
+                <div class="enlaces-sociales">
+
+                    <div>
+                        <img src="assets/icons/facebook-brands-bk.svg" alt="Facebook"/>
+                        <h3>Bikes N' Bikes</h3>
+                    </div>
+                    
+                    <div>
+                        <img src="assets/icons/instagram-brands-bk.svg" alt="Instagram" />
+                        <h3>662-585-65231</h3>
+                    </div>
+
+                    <div>
+                        <img src="assets/icons/whatsapp-brands-bk.svg" alt="WhatsApp"/>
+                        <h3>/bikesnbikes.sc</h3>
                     </div>
 
                 </div>

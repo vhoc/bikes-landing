@@ -1,5 +1,12 @@
 @media only screen and ( min-width: 1201px ) {
 
-    
+    /* Informacion */
+    #informacion > .container {
+        max-width: 1200px;
+    }
+
+    #informacion > .container > .informacion-imagen img {
+        width: 550px;
+    }
 
 }

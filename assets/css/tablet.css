@@ -12,4 +12,39 @@
         font-size: 1.1em;
     }
 
+    /* Venta y Renta */
+    #venta-renta > .container {
+        height: 700px;
+    }
+
+    #venta-renta > .container h1 {
+        font-size: 2rem;
+    }
+
+    #slider-container {
+        width:980px;
+    }
+
+    #jssor_1 {
+        width:980px;
+    }
+
+    #venta-renta > .container h2 {
+        font-size: 1.5em;
+    }
+
+    #costos div > h3, #costos div > span {
+        font-size: 1.3em;
+        padding: 1rem;
+    }
+
+    /* Visítanos */
+    #visitanos > .container > .enlaces-sociales > * {
+        padding: 0.7rem;
+    }
+
+    #visitanos > .container > .enlaces-sociales > div > h3 {
+        font-size: 0.7em;
+    }
+
  }

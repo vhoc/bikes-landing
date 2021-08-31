@@ -113,7 +113,9 @@ button.hamburger {
     margin-bottom: 1.5rem;
 }
 
-
+#informacion > .container > .informacion-texto > .titulo-desktop {
+    display: none;
+}
 
 img#img-info {
     --b:5px; /* adjust this */
@@ -149,7 +151,7 @@ img#img-info {
 }
 
 #venta-renta > .container h1 {
-    font-size: 2em;
+    font-size: 1.5em;
     margin-top: 4rem;
     margin-bottom: 2rem;
 }
@@ -158,7 +160,7 @@ img#img-info {
     margin-top: 2rem;
     margin-bottom: 2rem;
     text-decoration: underline;
-    font-size: 1.5em;    
+    font-size: 1em;    
     font-weight: 400;
 }
 
@@ -184,7 +186,7 @@ div.jssorl-009-spin {
     position:relative;
     top:0px;
     left:0px;
-    width:980px;
+    width:437px;
     height:300px;
     overflow:hidden;
 }
@@ -222,7 +224,7 @@ div.jssorl-009-spin {
     margin:0 auto;
     top:0px;
     left:0px;
-    width:980px;
+    width:450px;
     height:300px;
     overflow:hidden;
     visibility:hidden;
@@ -254,8 +256,59 @@ div.jssorb051 {
 #costos div {
     display: flex;
     flex-direction: column;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
 
-#costos div > h3,span {
+#costos div > h3, #costos div > span {
+    font-size: 1em;
     padding: 1rem;
+}
+
+/* Visítanos */
+#visitanos > .container {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#visitanos > .container h1:first-child {
+    margin-bottom: 3rem;
+}
+
+iframe {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+#visitanos > .container > .enlaces-sociales {
+    margin-top: 3rem;
+    display: flex;
+}
+
+#visitanos > .container > p {
+    text-align: center;
+}
+
+#visitanos > .container > p > span {
+    display: block;
+}
+
+#visitanos > .container > .enlaces-sociales > * {
+    padding: 0.5rem;
+}
+
+#visitanos > .container > .enlaces-sociales > div {
+    text-align: center;
+    cursor: pointer;
+}
+
+#visitanos > .container > .enlaces-sociales > div > img {
+    width: 2rem;
+}
+
+#visitanos > .container > .enlaces-sociales > div > h3 {
+    font-size: 0.51em;
 }

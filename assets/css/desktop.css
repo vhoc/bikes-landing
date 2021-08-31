@@ -83,6 +83,46 @@
         font-size: 1.2em;
     }
 
+    /* Informacion */
+    #informacion > .container {
+        display: flex;
+    }
+
+    #informacion > .container > .titulo-movil {
+        display: none;
+    }
+
+    #informacion > .container > .informacion-imagen img {
+        width: 400px;
+    }
+
+    #informacion > .container > .informacion-texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: right;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        
+    }
+
+    #informacion > .container > .informacion-texto > .titulo-desktop {
+        display: unset;
+    }
+
+    /* Visítanos */
+    iframe {
+        max-width: 768px;
+    }
+
+    #visitanos > .container > .enlaces-sociales > * {
+        padding: 1rem;
+    }
+
+    #visitanos > .container > .enlaces-sociales > div > h3 {
+        font-size: 1em;
+    }
+
     
  
  }
