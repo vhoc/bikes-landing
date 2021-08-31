@@ -9,4 +9,18 @@
         justify-content: space-evenly;
     }
 
+    /* Footer */
+    footer > .container > * {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    footer > .container img:first-child {
+        width: 150px;
+    }    
+    
+    #footer-sancarlos {
+        width: 150px;
+    }
+
 }

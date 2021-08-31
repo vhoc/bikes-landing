@@ -47,4 +47,24 @@
         font-size: 0.7em;
     }
 
+    iframe {
+        height: 220px;
+    }
+
+    /* Footer */
+    footer > .container {
+        width: 100%;
+    }
+    footer > .container img:first-child {
+        order: 1;
+    }
+    
+    footer > .container > span {
+        order: 2;
+    }
+    
+    #footer-sancarlos {
+        order: 3;
+    }
+
  }

@@ -1,11 +1,13 @@
 /* Nav */
 nav {
-    position: absolute;
+    position: sticky;
+
     width: 100%;
     background: rgba( 0, 0, 0, 0.5 );
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    z-index: 1000;
 }
 
 nav > a {
@@ -21,7 +23,47 @@ nav > a {
 }
 
 .nav-menu {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: no-wrap;
+    position: fixed;
+    left: -100%;
+    top: 45px;
+    background-color: var( --dark );
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+    transition: 0.3%;
+    box-shadow: 0 10px 27px rgba( 0, 0, 0, 0.05 );
+    color: white;
+}
+
+.nav-menu.active {
+    left: 0;
+}
+
+.nav-item {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    margin: 0;
+    height: 6rem;
+    justify-content: center;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: white;
+    width: max-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-content: center;
+}
+
+.nav-link:hover {
+    color: var( --bikesblue );
 }
 
 .nav-social {
@@ -38,6 +80,20 @@ button.hamburger {
     cursor: pointer;
 }
 
+/* Fancy animation starts here */
+.hamburger.active .bar:nth-child( 2 ) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child( 1 ) {
+    transform: translateY( 8px ) rotate( 45deg );
+}
+
+.hamburger.active .bar:nth-child( 3 ) {
+    transform: translateY( -8px ) rotate( -45deg );
+}
+/* Fancy animation ends here */
+
 .bar {
     display: block;
     width: 1.3rem;
@@ -51,6 +107,7 @@ button.hamburger {
 
 /* Hero */
 #hero {
+    margin-top: -45px;
     background: url( '../img/hero-0768.webp' );
     background-repeat: no-repeat;
     background-position-x: right;
@@ -260,6 +317,16 @@ div.jssorb051 {
     margin-right: 0.5rem;
 }
 
+#costos > div > .btn.btn-clear:hover {
+    background: unset;
+    color: unset;
+}
+
+#costos > div > .btn.btn-clear:active {
+    background: unset;
+    color: unset;
+}
+
 #costos div > h3, #costos div > span {
     font-size: 1em;
     padding: 1rem;
@@ -278,9 +345,14 @@ div.jssorb051 {
     margin-bottom: 3rem;
 }
 
-iframe {
+#visitanos > .container > a > img {
     width: 100%;
+    height: auto;
     margin-bottom: 2rem;
+    max-width: 450px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
 }
 
 #visitanos > .container > .enlaces-sociales {
@@ -305,10 +377,45 @@ iframe {
     cursor: pointer;
 }
 
-#visitanos > .container > .enlaces-sociales > div > img {
+#visitanos > .container > .enlaces-sociales > div > a > img {
     width: 2rem;
 }
 
 #visitanos > .container > .enlaces-sociales > div > h3 {
     font-size: 0.51em;
+    color: var( --bikesblue );
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: var( --dark );
+}
+
+footer > .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+}
+
+footer > .container > img {
+    width: 100px;
+    height: auto;
+}
+
+footer > .container img:first-child {
+    order: 1;
+}
+
+footer > .container > span {
+    order: 3;
+    color: white;
+    font-size: 0.5em;
+}
+
+#footer-sancarlos {
+    order: 2;
 }

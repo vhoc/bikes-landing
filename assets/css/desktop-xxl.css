@@ -1,6 +1,17 @@
 @media only screen and ( min-width: 1201px ) {
 
     /* Informacion */
+    #hero > .container {
+        margin-left: 4rem;
+    }
+
+    #hero > .container > .hero-content > * {
+        align-self: flex-start;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    /* Informacion */
     #informacion > .container {
         max-width: 1200px;
     }

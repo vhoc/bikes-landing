@@ -10,6 +10,12 @@
     /* Nav */
     nav {      
         padding-left: 1rem;
+        padding-right: 1rem;
+        justify-content: unset;
+    }
+
+    nav a span {
+        white-space: nowrap;
     }
 
     button.hamburger {
@@ -17,11 +23,19 @@
     }
 
     .nav-menu {
-        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /*position: unset;*/
+        position: static;
+        left: unset;
+        top: unset;
         align-items: stretch;
+        background-color: unset;
     }
 
     .nav-menu > .nav-item {
+        width: unset;
+        height: unset;
         margin-left: 1rem;
         margin-right: 1rem;
     }
@@ -40,7 +54,7 @@
     }
 
     nav > .nav-social {
-        display: flex;        
+        display: flex;
     }
 
     nav > .nav-social > a > img {
@@ -64,7 +78,7 @@
     #hero > .container {
         align-items: flex-start;
         text-align: left;
-        width: 62%;
+        width: 80%;
     }
 
     #hero > .container > img {
@@ -73,6 +87,10 @@
 
     #hero > .container > .hero-content {
         max-width: 768px;
+    }
+
+    #hero > .container > .hero-content > a {
+        align-self: flex-start;
     }
 
     .hero-content h1 {
@@ -112,7 +130,7 @@
 
     /* Visítanos */
     iframe {
-        max-width: 768px;
+        height: 300px;
     }
 
     #visitanos > .container > .enlaces-sociales > * {
@@ -121,6 +139,11 @@
 
     #visitanos > .container > .enlaces-sociales > div > h3 {
         font-size: 1em;
+    }
+
+    /* Footer */
+    footer > .container > span {
+        font-size: 0.9rem;
     }
 
     
