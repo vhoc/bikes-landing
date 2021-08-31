@@ -1,1 +1,2 @@
-# My personal starting boilerplate for Landing Pages
+# Bikes N Bikes
+Landing Page
